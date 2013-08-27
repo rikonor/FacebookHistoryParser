@@ -1,0 +1,101 @@
+* {
+    /*border: 1px dashed blue;*/
+}
+
+body {
+    font-family: Courier;
+    background-color: #C6E2FF;
+}
+
+#header {
+    width: 220px;
+    height: 260px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: auto;
+}
+
+#headerImage {
+    height: 100px;
+}
+
+a {
+    color: #cc0000;
+    text-decoration: none;
+}
+
+.button {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#finalList {
+    padding: 10px;
+    height: 40px;
+    width: 40%;
+    border-radius: 6px;
+    border: 2px solid black;
+    float: right;
+}
+
+/*This is where the Tabbing CSS begins*/
+
+#wrapper {
+    float: left;
+    width: 720px;
+    /*margin: 40px auto 0;*/
+}
+
+#wrapper h1 {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tabContainer {
+    width: 700px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.tabs {
+    height: 30px;
+}
+
+.tabs > ul {
+    font-size: 1em;
+    list-style: none;
+}
+
+.tabs > ul > li {
+    border: 1px solid black;
+    margin: 0 2px 0 0;
+    padding: 5px 10px;
+    display: block;
+    float: left;
+    color: #FFF;
+    border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+    /*background: #FFFFFF;*/
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0C91EC), color-stop(100%,#257AB6)); /* webkit */
+}
+
+.tabs > ul > li:hover{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
+    cursor:pointer;
+    color: #333;
+}
+
+.tabs > ul > li.tabActiveHeader{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFFFFF), color-stop(10%,#F3F3F3), color-stop(50%,#F3F3F3), color-stop(100%,#FFFFFF)); /* webkit */
+    cursor:pointer;
+    color: #333;
+}
+
+.tabscontent {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding:10px 10px 25px;
+    margin:0;
+    color:#333;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facebook History Parser - Choose User</title>
+  </head>
+  <body>
+  		<h1>Facebook History Parser</h1>
+    	<h3>Please choose a user for FHP to parse.</h3>
+
+    	<form action="/parseMessages" method="post">
+        {% for name in names %}
+        <input type="checkbox" name="user" value="{{ name }}">{{ name }}<br>
+        {% endfor %}
+        <input type="submit">
+      </form>
+
+  </body>
+</html>
